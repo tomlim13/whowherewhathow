@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Last Question</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+    .box {
+      max-width: 500px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin: auto;
+      text-align: center;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .yes { background: #ff6b6b; color: white; }
+    .maybe { background: #ffd166; }
+    .no { background: #ddd; }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>One last question 😅</h2>
+  <p>Are you free on <strong>Feb 14</strong>?</p>
+  <p style="font-size: 14px; color: #666;">No pressure at all</p>
+
+  <button class="yes" onclick="yes()">Yes 🙂</button>
+  <button class="maybe" onclick="maybe()">Maybe</button>
+  <button class="no" onclick="no()">Not this time</button>
+</div>
+
+<script>
+function yes() {
+  window.location.href = "https://wa.me/65XXXXXXXX?text=Hey%20😊%20I%20saw%20your%20survey";
+}
+function maybe() {
+  alert("Totally okay 🙂");
+}
+function no() {
+  alert("Thanks for being honest 😊");
+}
+</script>
+
+</body>
+</html>
